@@ -3,33 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GoldClub — Creator Membership</title>
-
-  <!-- ✅ IMPORTANTISSIMO per GitHub Pages (repo project): percorsi RELATIVI -->
-  <link rel="stylesheet" href="./style.css" />
+  <title>Iliana — Creator</title>
+  <meta name="description" content="Iliana — contenuti esclusivi, early access e post per membri." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
+  <div class="bg"></div>
 
-  <header class="topbar">
-    <div class="container topbar__inner">
+  <header class="header">
+    <div class="container header__inner">
       <a class="brand" href="#">
         <span class="brand__dot"></span>
-        <span class="brand__name">GoldClub</span>
+        <span class="brand__name">Iliana</span>
       </a>
 
       <nav class="nav">
         <a href="#posts">Posts</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#plans">Plans</a>
+        <a href="#pricing">Pricing</a>
       </nav>
 
-      <div class="topbar__actions">
-        <button class="btn btn--ghost" type="button">Saved</button>
-        <button class="btn btn--ghost" type="button">Sign In</button>
-        <button class="btn btn--primary" type="button">7-Day Free Trial</button>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="#pricing">Create account</a>
+        <a class="btn btn--primary" href="#pricing">Free trial</a>
+        <a class="btn btn--text" href="#signin">Sign in</a>
       </div>
     </div>
   </header>
@@ -38,131 +34,144 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__left">
-          <div class="creator">
-            <img class="creator__avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=240&h=240&fit=crop" alt="Creator" />
-            <div class="creator__meta">
-              <h1 class="h1">Iliyana</h1>
-              <p class="muted">Creator • Milano • contenuti esclusivi & backstage</p>
+        <div class="hero__card">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=256&q=80" alt="Iliana" />
+          </div>
+
+          <div class="hero__meta">
+            <h1>Iliana</h1>
+            <p class="muted">
+              Exclusive drops, early access & behind-the-scenes. Join the membership to unlock everything.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#pricing">Start free trial</a>
+              <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noreferrer">Remix for free</a>
             </div>
-          </div>
 
-          <p class="lead">
-            Un’esperienza premium in stile “membership”: contenuti, aggiornamenti, collezioni e post
-            con ricerca e filtri — tutto in <b>nero & oro</b>.
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn btn--primary" href="#plans">Become a Supporter</a>
-            <a class="btn btn--ghost" href="#posts">Browse Posts</a>
-          </div>
-
-          <div class="chips">
-            <span class="chip">100% responsive</span>
-            <span class="chip">Filtri + ricerca</span>
-            <span class="chip">Griglia card</span>
-            <span class="chip">Zero dipendenze</span>
+            <div class="hero__stats">
+              <div class="stat">
+                <div class="stat__num">48</div>
+                <div class="stat__label">Posts</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">3</div>
+                <div class="stat__label">Benefits</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">7d</div>
+                <div class="stat__label">Trial</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="hero__right">
-          <div class="card card--glass">
-            <div class="card__header">
-              <p class="kicker">Membership Template</p>
-              <h2 class="h2">Il tuo hub esclusivo, senza piattaforme</h2>
+        <div class="hero__side">
+          <div class="glass">
+            <h2>Benefits</h2>
+            <div class="benefits">
+              <div class="benefit">
+                <div class="icon">⏱️</div>
+                <div>
+                  <div class="benefit__title">Early Access</div>
+                  <div class="muted">Unlock new content before everyone else.</div>
+                </div>
+              </div>
+              <div class="benefit">
+                <div class="icon">🎬</div>
+                <div>
+                  <div class="benefit__title">Extended Cuts</div>
+                  <div class="muted">Longer versions, extras and full sets.</div>
+                </div>
+              </div>
+              <div class="benefit">
+                <div class="icon">🗂️</div>
+                <div>
+                  <div class="benefit__title">Deleted Scenes</div>
+                  <div class="muted">Behind-the-scenes & private drops.</div>
+                </div>
+              </div>
             </div>
-            <p class="muted">
-              Sostituisci immagini e testi, cambia prezzi, aggiungi post. Questo è un esempio “simile”
-              al template Framer, ma fatto da noi in HTML/CSS/JS.
-            </p>
-            <div class="mini-stats">
-              <div class="mini-stat">
-                <span class="mini-stat__label">Nuovi post</span>
-                <span class="mini-stat__value">Ogni settimana</span>
-              </div>
-              <div class="mini-stat">
-                <span class="mini-stat__label">Accesso</span>
-                <span class="mini-stat__value">VIP</span>
-              </div>
-              <div class="mini-stat">
-                <span class="mini-stat__label">Tema</span>
-                <span class="mini-stat__value">Gold / Black</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="card card--outline">
-            <h3 class="h3">Nota</h3>
-            <p class="muted">
-              Questo esempio non include login/pagamenti veri (quelli si collegano dopo: Stripe, LemonSqueezy, ecc).
-              Qui facciamo il <b>layout + filtri</b> come il template.
-            </p>
+            <div class="divider"></div>
+
+            <div class="note">
+              <span class="pill">Members only</span>
+              <span class="muted">All posts below are locked until you join.</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
-    <section id="benefits" class="section">
+    <!-- PRICING -->
+    <section id="pricing" class="section">
       <div class="container">
         <div class="section__head">
-          <h2 class="h2">Immergiti nei contenuti riservati</h2>
-          <p class="muted">Tre benefit come nel template: chiari, d’impatto, “premium”.</p>
+          <h2>Pricing</h2>
+
+          <div class="toggle" role="tablist" aria-label="Billing">
+            <button class="toggle__btn is-active" data-billing="annual">Annual</button>
+            <button class="toggle__btn" data-billing="monthly">Monthly</button>
+          </div>
         </div>
 
-        <div class="grid3">
-          <article class="card">
-            <h3 class="h3">Early Access</h3>
-            <p class="muted">Anteprime e sneak peek: prima di tutti.</p>
-          </article>
-          <article class="card">
-            <h3 class="h3">Extended Cuts</h3>
-            <p class="muted">Versioni più lunghe e più intense dei contenuti.</p>
-          </article>
-          <article class="card">
-            <h3 class="h3">Deleted Scenes</h3>
-            <p class="muted">Dietro le quinte e scene mai pubblicate altrove.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PLANS -->
-    <section id="plans" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="h2">Choose your plan</h2>
-          <p class="muted">Sezione piani “simile” al template: due card, una evidenziata.</p>
-        </div>
-
-        <div class="plans">
-          <article class="plan plan--featured">
-            <div class="badge">Best Value</div>
-            <p class="kicker">14 Days Free</p>
-            <h3 class="h3">Annual</h3>
-            <div class="price">
-              <span class="price__big">€119,99</span>
-              <span class="muted">/anno</span>
+        <div class="pricing">
+          <article class="pricecard">
+            <div class="pricecard__top">
+              <div class="pricecard__title">Creator Membership</div>
+              <div class="muted">Full access to all posts + weekly drops.</div>
             </div>
-            <p class="muted">€9,99/mese — risparmi col pass annuale</p>
-            <button class="btn btn--primary btn--block" type="button">Buy Now</button>
-          </article>
 
-          <article class="plan">
-            <p class="kicker">7 Days Free</p>
-            <h3 class="h3">Monthly</h3>
-            <div class="price">
-              <span class="price__big">€19,99</span>
-              <span class="muted">/mese</span>
+            <div class="pricecard__price">
+              <div class="price">
+                <span class="price__currency">€</span>
+                <span class="price__value" id="priceValue">79</span>
+                <span class="price__period" id="pricePeriod">/year</span>
+              </div>
+              <div class="muted" id="priceSub">7-day free trial • Cancel anytime</div>
             </div>
-            <p class="muted">Pay as you go — cancella quando vuoi</p>
-            <button class="btn btn--ghost btn--block" type="button">Buy Now</button>
-          </article>
-        </div>
 
-        <p class="fineprint">
-          Dopo il trial, l’abbonamento si rinnova automaticamente. (Testo segnaposto: poi lo personalizziamo.)
-        </p>
+            <ul class="checklist">
+              <li>✅ Unlock all posts</li>
+              <li>✅ Early access & extras</li>
+              <li>✅ Members-only archive</li>
+              <li>✅ Priority replies</li>
+            </ul>
+
+            <div class="pricecard__cta">
+              <a class="btn btn--primary btn--wide" id="buyBtn" href="#"
+                 target="_blank" rel="noreferrer">Buy now</a>
+              <a class="btn btn--ghost btn--wide" href="#posts">See posts</a>
+            </div>
+
+            <div class="muted tiny">
+              Tip: collega “Buy now” a Stripe / LemonSqueezy / PayPal.
+            </div>
+          </article>
+
+          <aside class="sidecard">
+            <h3>How it works</h3>
+            <ol class="steps">
+              <li>Start the free trial</li>
+              <li>Unlock posts instantly</li>
+              <li>Cancel anytime</li>
+            </ol>
+
+            <div class="divider"></div>
+
+            <h3>FAQ</h3>
+            <details>
+              <summary>Can I cancel anytime?</summary>
+              <p class="muted">Yes, you can cancel whenever you want. Access remains until the end of the billing period.</p>
+            </details>
+            <details>
+              <summary>Is content downloadable?</summary>
+              <p class="muted">You can stream content inside the site area you unlock (depending on how you deliver it).</p>
+            </details>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -170,78 +179,46 @@
     <section id="posts" class="section">
       <div class="container">
         <div class="section__head">
-          <h2 class="h2">Recent posts</h2>
-          <p class="muted">Ricerca + filtri + tag rapidi (come vibe del template).</p>
-        </div>
+          <h2>Recent posts</h2>
 
-        <div class="filters card">
-          <div class="filters__row">
-            <label class="field">
-              <span class="field__label">Search</span>
-              <input id="q" type="search" placeholder="es. backstage, set, teaser..." />
-            </label>
-
-            <label class="field">
-              <span class="field__label">Categoria</span>
-              <select id="category">
-                <option value="all">Tutte</option>
-                <option value="video">Video</option>
-                <option value="photo">Foto</option>
-                <option value="audio">Audio</option>
-                <option value="writing">Writing</option>
-              </select>
-            </label>
-
-            <label class="field">
-              <span class="field__label">Accesso</span>
-              <select id="access">
-                <option value="all">Tutti</option>
-                <option value="free">Free</option>
-                <option value="vip">VIP</option>
-              </select>
-            </label>
-
-            <button id="reset" class="btn btn--ghost" type="button">Reset</button>
-          </div>
-
-          <div class="tags">
-            <button class="tag" data-tag="minimal">Minimal</button>
-            <button class="tag" data-tag="bold">Bold</button>
-            <button class="tag" data-tag="luxury">Luxury</button>
-            <button class="tag" data-tag="fast">Fast</button>
+          <div class="search">
+            <span class="search__icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search posts" autocomplete="off" />
           </div>
         </div>
 
-        <div id="postsGrid" class="posts"></div>
+        <div id="postsGrid" class="grid"></div>
+        <div id="noResults" class="muted center hidden">No posts found.</div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer__inner">
-        <div>
-          <div class="brand brand--footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="brandline">
             <span class="brand__dot"></span>
-            <span class="brand__name">GoldClub</span>
+            <strong>Iliana</strong>
           </div>
-          <p class="muted">© <span id="year"></span> — Template demo in HTML/CSS/JS</p>
+          <p class="muted">Get updates when new drops are live.</p>
         </div>
 
-        <form class="newsletter card" onsubmit="return false;">
-          <div class="newsletter__text">
-            <p class="kicker">Get notified</p>
-            <p class="muted">Inserisci la mail per ricevere news (demo).</p>
-          </div>
-          <div class="newsletter__actions">
-            <input id="email" type="email" placeholder="email@domain.com" />
-            <button id="sub" class="btn btn--primary" type="button">Subscribe</button>
-          </div>
-          <p id="subOk" class="subok" aria-live="polite"></p>
+        <form class="newsletter" onsubmit="event.preventDefault(); alert('Iscrizione salvata (demo)!');">
+          <input type="email" placeholder="Email address" required />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
         </form>
+
+        <div class="footer__bottom muted tiny">
+          <span>© <span id="year"></span> Iliana</span>
+          <span>•</span>
+          <a class="muted" href="#">Privacy</a>
+          <span>•</span>
+          <a class="muted" href="#">Terms</a>
+        </div>
       </div>
     </footer>
   </main>
 
-  <script src="./script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
