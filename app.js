@@ -27,20 +27,20 @@ const POSTS = [
   {
     title: "Video Toys",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
-    img: "https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&fit=crop&w=1400&q=80"
+    img: ""
   },
   {
-    title: "You Peep 👀",
+    title: "Video",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
     img: ""
   },
   {
-    title: "Guitar session — studio night",
+    title: "Photo",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
     img: ""
   },
   {
-    title: "Live — Saint Tropez",
+    title: "Live",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
     img: ""
   }
