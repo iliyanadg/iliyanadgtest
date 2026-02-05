@@ -25,24 +25,24 @@ joinBtn.href = CHECKOUT[selected];
 // posts demo (colonna singola come screenshot)
 const POSTS = [
   {
-    title: "Sunset Magic Session • Mykonos Riviera, Greece",
+    title: "Video Toys",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
     img: "https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&fit=crop&w=1400&q=80"
   },
   {
     title: "You Peep 👀",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
-    img: "https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=1400&q=80"
+    img: ""
   },
   {
     title: "Guitar session — studio night",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
-    img: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1400&q=80"
+    img: ""
   },
   {
     title: "Live — Saint Tropez",
     meta: "Exclusive Preview Video • Members-only • Join to unlock",
-    img: "https://images.unsplash.com/photo-1520975958225-6b76f02c91f8?auto=format&fit=crop&w=1400&q=80"
+    img: ""
   }
 ];
 
