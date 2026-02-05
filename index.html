@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iliyana</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container row">
+      <a class="brand" href="#">
+        <span class="logo">A</span>
+        <span>Iliyana</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#work">Progetti</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#contact" class="btn small">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="pill">Nuovo · Template demo con filtri</p>
+          <h1>Un sito elegante, veloce, e modificabile in 10 minuti.</h1>
+          <p class="lead">
+            Cambia immagini, testi e palette. Aggiungi filtri, categorie e una griglia di card perfetta per portfolio, shop leggero o directory.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#work">Vedi esempi</a>
+            <a class="btn ghost" href="#contact">Richiedi info</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>100%</strong><span>responsive</span></div>
+            <div class="stat"><strong>Filtri</strong><span>categorie + prezzo</span></div>
+            <div class="stat"><strong>Zero</strong><span>dipendenze</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="mock">
+            <div class="mock-top"></div>
+            <div class="mock-body">
+              <div class="mock-line w70"></div>
+              <div class="mock-line w90"></div>
+              <div class="mock-line w55"></div>
+              <div class="mock-grid">
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+              </div>
+            </div>
+          </div>
+          <p class="muted">Sostituisci questo blocco con una tua immagine hero.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Progetti (con filtri)</h2>
+          <p class="muted">Filtra per categoria, fascia di prezzo e cerca per parole chiave.</p>
+        </div>
+
+        <div class="filters card">
+          <div class="field">
+            <label for="q">Cerca</label>
+            <input id="q" type="search" placeholder="es. landing, e-commerce, foto..." autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="cat">Categoria</label>
+            <select id="cat">
+              <option value="all">Tutte</option>
+              <option value="branding">Branding</option>
+              <option value="web">Web</option>
+              <option value="social">Social</option>
+              <option value="photo">Foto</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="price">Prezzo</label>
+            <select id="price">
+              <option value="all">Tutti</option>
+              <option value="low">€</option>
+              <option value="mid">€€</option>
+              <option value="high">€€€</option>
+            </select>
+          </div>
+
+          <div class="field grow">
+            <label>Tag rapidi</label>
+            <div class="chips" id="chips">
+              <button class="chip is-active" data-chip="all" type="button">Tutti</button>
+              <button class="chip" data-chip="minimal" type="button">Minimal</button>
+              <button class="chip" data-chip="bold" type="button">Bold</button>
+              <button class="chip" data-chip="lux" type="button">Luxury</button>
+              <button class="chip" data-chip="fast" type="button">Fast</button>
+            </div>
+          </div>
+
+          <div class="field actions-inline">
+            <label>&nbsp;</label>
+            <button class="btn ghost" id="reset" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="grid" id="grid">
+          <!-- Card: cambia immagini/titoli liberamente -->
+          <article class="card item" data-title="Aurora Landing" data-cat="web" data-price="mid" data-tags="minimal fast">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge">Web</span>
+                <span class="dots">•</span>
+                <span class="muted">€€</span>
+              </div>
+              <h3>Aurora Landing</h3>
+              <p class="muted">Landing pulita con CTA forti e sezione features.</p>
+              <div class="tags">
+                <span class="tag">Minimal</span><span class="tag">Fast</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card item" data-title="Luxe Identity" data-cat="branding" data-price="high" data-tags="lux bold">
+            <div class="thumb alt" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge">Branding</span>
+                <span class="dots">•</span>
+                <span class="muted">€€€</span>
+              </div>
+              <h3>Luxe Identity</h3>
+              <p class="muted">Brand identity premium: logotipo, palette, guidelines.</p>
+              <div class="tags">
+                <span class="tag">Luxury</span><span class="tag">Bold</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card item" data-title="Social Kit" data-cat="social" data-price="low" data-tags="fast bold">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge">Social</span>
+                <span class="dots">•</span>
+                <span class="muted">€</span>
+              </div>
+              <h3>Social Kit</h3>
+              <p class="muted">Pack di template per stories e post, pronti all’uso.</p>
+              <div class="tags">
+                <span class="tag">Fast</span><span class="tag">Bold</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card item" data-title="Editorial Photos" data-cat="photo" data-price="mid" data-tags="minimal lux">
+            <div class="thumb alt" aria-hidden="true"></div>
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge">Foto</span>
+                <span class="dots">•</span>
+                <span class="muted">€€</span>
+              </div>
+              <h3>Editorial Photos</h3>
+              <p class="muted">Shoot editoriale con look pulito e post-produzione.</p>
+              <div class="tags">
+                <span class="tag">Minimal</span><span class="tag">Luxury</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty muted" id="empty" hidden>Nessun risultato con questi filtri.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section altbg">
+      <div class="container split">
+        <div>
+          <h2>Chi siamo</h2>
+          <p class="muted">
+            Qui metti la tua descrizione: cosa fai, a chi ti rivolgi, perché sei diversa.
+            Se vuoi puoi trasformare questa sezione in “servizi” con 3 colonne.
+          </p>
+          <ul class="bullets">
+            <li>Design pulito e coerente</li>
+            <li>Struttura scalabile (aggiungi card infinite)</li>
+            <li>Ottimo per portfolio, servizi o mini-catalogo</li>
+          </ul>
+        </div>
+
+        <div class="card pad">
+          <h3>Servizi</h3>
+          <div class="services">
+            <div class="service"><strong>Web</strong><span class="muted">Landing, portfolio, mini shop</span></div>
+            <div class="service"><strong>Brand</strong><span class="muted">Identity, kit social, moodboard</span></div>
+            <div class="service"><strong>Content</strong><span class="muted">Foto, creatività, micro-copy</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="card pad">
+          <h2>Contatti</h2>
+          <p class="muted">Sostituisci con email/telegram/whatsapp o un form vero.</p>
+          <div class="contact-row">
+            <a class="btn" href="mailto:hello@example.com">Scrivimi via email</a>
+            <a class="btn ghost" href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <span class="muted">© <span id="year"></span> Studio Aurora</span>
+      <span class="muted">Privacy · Termini</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
